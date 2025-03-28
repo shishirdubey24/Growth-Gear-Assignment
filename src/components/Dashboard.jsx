@@ -1,14 +1,22 @@
-import React from "react";
 import QueryInput from "./QueryInput";
-//import QueryHistory from "./QueryHistory";
-//import QueryHistory from "./Queryhistory";
-//import QueryHistory from ",/QueryHistory";
 import QueryHistory from "./QueryHistory";
+import QueryResult from "./QueryResults";
+
 const Dashboard = () => {
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 space-y-6 max-w-6xl mx-auto">
+      {/* Input Section */}
       <QueryInput />
-       <QueryHistory/>
+
+      {/* Full Width Sections on Large Screens */}
+      <div className="space-y-6 lg:space-y-0 lg:flex lg:flex-col lg:gap-10">
+        <div className="w-full">
+          <QueryHistory />
+        </div>
+        <div className="w-full">
+          <QueryResult />
+        </div>
+      </div>
     </div>
   );
 };
