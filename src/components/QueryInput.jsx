@@ -1,26 +1,33 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { submitQuery } from "../Store/sumitQuerySlice";
+import { submitQuery } from "../utils/sumitQuerySlice";
 const QueryInput = () => {
-  const [query, setQuery] = useState("");
+  const [input, setInput] = useState("");
   const dispatch = useDispatch();
 
   const handleSubmit = () => {
-    if (!query.trim()) return;
-    dispatch(submitQuery(query));
-    setQuery(""); // Clear input after submitting
+    console.log("🚀 Submit Button Clicked! Input:", input); // Log button click
+    if (input.trim() === "") {
+      console.log("⚠️ No input provided!");
+      return;
+    }
+
+    dispatch(submitQuery(input)); // Dispatch action
+    console.log("📤 Dispatched submitQuery action:", input);
+
+    setInput(""); // Clear input after submission
   };
 
   return (
-    <div className="p-4">
+    <div className="space-y-4">
       <input
         type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Ask a business question..."
-        className="border p-2 rounded w-full"
+        className="border p-2 w-full"
+        placeholder="Enter your query..."
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
       />
-      <button onClick={handleSubmit} className="bg-blue-500 text-white p-2 rounded mt-2  ">
+      <button onClick={handleSubmit} className="bg-blue-500 text-white p-2 rounded">
         Submit Query
       </button>
     </div>

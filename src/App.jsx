@@ -1,12 +1,14 @@
 
 import './App.css'
-import QueryInput from './components/QueryInput'
+import Dashboard from './components/Dashboard'
+//import QueryInput from './components/QueryInput'
 
 function App() {
 
   return (
   <>
-  <QueryInput/>
+ <Dashboard/>
+  
   </>
   )
 }
