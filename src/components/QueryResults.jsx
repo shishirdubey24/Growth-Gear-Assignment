@@ -5,10 +5,11 @@ const QueryResult = () => {
   const { result, query, loading, error } = useSelector((state) => state.query);
   console.log("🧐 Query State in QueryResult:", { query, result, loading, error });
 
-  // 🛠 Convert result object into chart data
-  const chartData = result
+  // 🛠 Convert result object into chart data safely
+  const chartData = result && typeof result === "object"
     ? Object.entries(result).map(([key, value]) => ({ name: key, value }))
     : [];
+
 
   return (
     <div className="p-4 border rounded-md bg-white shadow">
@@ -22,7 +23,7 @@ const QueryResult = () => {
           <p className="mb-2">Showing results for: <strong>{query}</strong></p>
 
           {/* 🛠 Debugging: Show raw data before rendering the chart */}
-          <pre className="bg-gray-100 p-2 rounded text-sm mb-8">{JSON.stringify(chartData, null, 2)}</pre>
+        {/*  <pre className="bg-gray-100 p-2 rounded text-sm mb-8">{JSON.stringify(chartData, null, 2)}</pre>*/}  
           <div className="w-full h-[900px]">
           <ResponsiveContainer width="80%" height={500}>
             <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
