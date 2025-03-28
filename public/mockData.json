@@ -1,0 +1,144 @@
+{
+  "analytics": {
+    "Sales": {
+      "revenue": 5000,
+      "growth": 12,
+      "profit": 1500,
+      "customers": 200,
+      "region": "North"
+    },
+    "Marketing": {
+      "budget": 3000,
+      "engagement": 8,
+      "leads": 120,
+      "campaigns": 5,
+      "conversion": 15
+    },
+    "Finance": {
+      "expenses": 7000,
+      "investments": 500,
+      "profit": 2500,
+      "savings": 1200,
+      "losses": 400
+    },
+    "HR": {
+      "employees": 150,
+      "hires": 20,
+      "attrition": 5,
+      "training": 10,
+      "satisfaction": 80
+    },
+    "IT": {
+      "servers": 50,
+      "uptime": 99.8,
+      "incidents": 2,
+      "security": 95,
+      "cost": 8000
+    },
+    "Operations": {
+      "efficiency": 85,
+      "output": 500,
+      "defects": 10,
+      "downtime": 2,
+      "logistics": 7
+    },
+    "Customer Support": {
+      "tickets": 1200,
+      "resolved": 1100,
+      "pending": 50,
+      "satisfaction": 90,
+      "responseTime": 2
+    },
+    "Product Development": {
+      "features": 25,
+      "bugs": 5,
+      "deployments": 3,
+      "testing": 10,
+      "timeToMarket": 6
+    },
+    "R&D": {
+      "projects": 10,
+      "patents": 2,
+      "budget": 4000,
+      "innovation": 85,
+      "collaborations": 4
+    },
+    "Supply Chain": {
+      "vendors": 30,
+      "orders": 500,
+      "delays": 10,
+      "efficiency": 88,
+      "cost": 7000
+    },
+    "Legal": {
+      "cases": 15,
+      "resolved": 10,
+      "pending": 5,
+      "compliance": 95,
+      "cost": 2000
+    },
+    "Admin": {
+      "facilities": 8,
+      "maintenance": 12,
+      "budget": 3000,
+      "staff": 25,
+      "efficiency": 85
+    },
+    "Procurement": {
+      "vendors": 40,
+      "purchases": 300,
+      "budget": 6000,
+      "costSavings": 12,
+      "efficiency": 90
+    },
+    "Logistics": {
+      "fleet": 50,
+      "deliveries": 1000,
+      "delays": 30,
+      "cost": 5000,
+      "efficiency": 92
+    },
+    "Manufacturing": {
+      "units": 5000,
+      "defects": 50,
+      "cost": 10000,
+      "efficiency": 89,
+      "waste": 5
+    },
+    "Retail": {
+      "stores": 20,
+      "sales": 7000,
+      "customers": 1500,
+      "profitMargin": 25,
+      "growth": 10
+    },
+    "E-commerce": {
+      "visitors": 100000,
+      "conversions": 1500,
+      "cartAbandonment": 35,
+      "revenue": 12000,
+      "growth": 15
+    },
+    "Analytics": {
+      "reportsGenerated": 500,
+      "insights": 300,
+      "accuracy": 95,
+      "automation": 85,
+      "efficiency": 88
+    },
+    "Cybersecurity": {
+      "threatsDetected": 120,
+      "incidents": 5,
+      "responseTime": 4,
+      "firewallStrength": 98,
+      "cost": 4000
+    },
+    "Quality Assurance": {
+      "tests": 250,
+      "bugsFound": 15,
+      "fixesDeployed": 10,
+      "accuracy": 99,
+      "efficiency": 90
+    }
+  }
+}
