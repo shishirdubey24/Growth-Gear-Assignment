@@ -7,7 +7,7 @@ const QueryHistory = () => {
   if (!queryHistory) {
     return <p>No queries yet.</p>;
   }
-
+    
   return (
     <div className="border p-4 rounded-lg">
       <h2 className="text-lg font-bold mb-2">Query History</h2>
