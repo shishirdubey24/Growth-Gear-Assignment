@@ -1,10 +1,14 @@
 import QueryInput from "./QueryInput";
 import QueryHistory from "./QueryHistory";
 import QueryResult from "./QueryResults";
+import NavBar from "./NavBar";
 
 const Dashboard = () => {
   return (
-    <div className="p-6 space-y-6 max-w-6xl mx-auto">
+    <div >
+        <NavBar/>
+    
+    <div className="p-6 space-y-6 max-w-6xl mx-auto ">
       {/* Input Section */}
       <QueryInput />
 
@@ -17,6 +21,7 @@ const Dashboard = () => {
           <QueryResult />
         </div>
       </div>
+    </div>
     </div>
   );
 };
