@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FetchMockData } from "../utils/FetchMockdata"; // Import fetch function
-
+import { FetchMockData } from "../utils/FetchMockdata"; // Import fetch function 
+ import AiResponse from "./AiResponse";
 const QueryInput = () => {
   const [input, setInput] = useState("");
 
@@ -19,7 +19,7 @@ const QueryInput = () => {
 
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mt-4">
       <input
         type="text"
         className="border p-2 w-full"
@@ -30,6 +30,7 @@ const QueryInput = () => {
       <button onClick={handleSubmit} className="bg-blue-500 text-white p-2 rounded">
         Submit Query
       </button>
+      <AiResponse/>
     </div>
   );
 };
